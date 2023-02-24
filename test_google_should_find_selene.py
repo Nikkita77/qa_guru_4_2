@@ -12,3 +12,5 @@ def test_negative_find_google(window_size):
     browser.open('https://google.com')
     browser.element('[name="q"]').should(be.blank).type('geghwheerherhjjjrthjfgnhfgn').press_enter()
     browser.element("//*[@id='topstuff']/div/div/ul/li[1]").should(have.text('Убедитесь, что все слова написаны без ошибок'))
+    
+    print
